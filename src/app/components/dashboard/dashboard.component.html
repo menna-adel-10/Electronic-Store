@@ -1,66 +1,52 @@
-<!-- Start Sidebar -->
-<div id="wrapper" [ngClass]="{'toggled': isMenuToggled}">
+<div id="wrapper" [ngClass]="{'toggled': isSidebarToggled}">
 
-  <!-- Sidebar -->
-  <div id="sidebar-wrapper">
+  <aside id="sidebar-wrapper">
+
     <ul class="sidebar-nav">
-      <button class="btn-close-white float-end" (click)="toggleMenu()" id="menu-toggle">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-      <li class="sidebar-brand">
-        <a href="#">
-          Start Bootstrap
-        </a>
+      <li class="active">
+        <a href="#"><i class="fa fa-home"></i>Home</a>
       </li>
       <li>
-        <a href="#">Dashboard</a>
+        <a href="#"><i class="fa fa-plug"></i>Plugins</a>
       </li>
       <li>
-        <a href="#">Shortcuts</a>
-      </li>
-      <li>
-        <a href="#">Overview</a>
-      </li>
-      <li>
-        <a href="#">Events</a>
-      </li>
-      <li>
-        <a href="#">About</a>
-      </li>
-      <li>
-        <a href="#">Services</a>
-      </li>
-      <li>
-        <a href="#">Contact</a>
+        <a href="#"><i class="fa fa-user"></i>Users</a>
       </li>
     </ul>
+  </aside>
+
+  <div id="navbar-wrapper">
+    <nav class="navbar d-flex justify-content-between col-12">
+
+      <div class="container-fluid justify-content-between">
+        <button class="btn text-bg-light" id="sidebar-toggle" (click)="toggleSidebar()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <div class="d-flex align-items-center px-3">
+            <div class=" admin d-flex align-items-center">
+              <div class="text-gray-50 font-medium d-none d-md-inline-block">Mira</div>
+              <span class="d-none d-md-block text-gray-400 ml-2 text-sm">Admin</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </nav>
   </div>
-  <!-- /#sidebar-wrapper -->
+
+  <section id="content-wrapper">
+    <div class="row">
+      <div class="col-lg-12">
+        <app-hero></app-hero>
+      </div>
+    </div>
+  </section>
 
 </div>
-<!-- /#wrapper -->
-<!-- End Sidebar -->
-
-
 
 <!-- //////////////////////Start Searchnav////////////////////////////////////// -->
-<nav class="navbar d-flex justify-content-between">
 
-  <div class="container-fluid justify-content-between">
-    <button class="btn text-bg-light" (click)="toggleMenu()" id="menu-toggle">
-    <i class="fa-solid fa-bars"></i>
-    </button>
-    <form class="d-flex">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <div class="d-flex align-items-center px-3">
-        <div class=" admin d-flex align-items-center">
-          <div class="text-gray-50 font-medium d-none d-md-inline-block">Mira</div>
-          <span class="d-none d-md-block text-gray-400 ml-2 text-sm">Admin</span>
-        </div>
-      </div>
-    </form>
-  </div>
-</nav>
 
 <!-- ///////////////////////End Searchnav/////////////////////// -->
 
