@@ -217,7 +217,7 @@ a:focus {
   }
 
   #sidebar-wrapper {
-    width: 0;
+    width: 60px;
   }
 
   #wrapper.toggled #sidebar-wrapper {
@@ -251,5 +251,9 @@ a:focus {
   #wrapper.toggled #content-wrapper {
     position: relative;
     margin-right: 250px;
+  }
+
+  .card {
+    margin-left: -50px;
   }
 }
