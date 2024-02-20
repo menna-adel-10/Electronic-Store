@@ -3,9 +3,9 @@
     class="card mt-4 bg-dark text-light d-inline-grid mx-3 justify-content-center align-items-center"
     style="height: 250px; width: 22rem;">
     <div class="card-body">
-      <i class="justify-content-center align-items-center d-grid mt-2" [ngClass]="['fa', 'p-3', 'rounded-4', getIconColor(i)]" [ngClass]="'fa ' + item.icon"></i>
+      <i class="fa p-3 rounded-5 d-grid justify-content-center" [ngClass]="getIconColor(i)" [class]="item.icon"></i>
       <h3 class="card-title justify-content-center align-items-center d-grid mt-3">{{ item.num }}</h3>
-      <h6 class="card-text">{{ item.info }}</h6>
+      <h6 class="card-text text-uppercase mt-3">{{ item.info }}</h6>
     </div>
   </div>
 </div>

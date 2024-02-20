@@ -12,11 +12,16 @@ import { CommonModule } from '@angular/common';
 export class HeroComponent {
 
   data = Data;
-      iconColors = ['text-primary-emphasis', 'text-success-emphasis', 'text-danger-emphasis'];
 
 
   getIconColor(index: number): string {
-    const colorIndex = index % this.iconColors.length;
-    return this.iconColors[colorIndex];
+    if (index % 3 === 0) {
+      return 'text-primary';
+    } else if (index % 3 === 1) {
+      return 'text-info';
+    } else {
+      return 'text-success';
+    }
+
   }
 }
