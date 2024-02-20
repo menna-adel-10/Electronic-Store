@@ -1,0 +1,66 @@
+<!-- Start Sidebar -->
+<div id="wrapper" [ngClass]="{'toggled': isMenuToggled}">
+
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <button class="btn-close-white float-end" (click)="toggleMenu()" id="menu-toggle">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <li class="sidebar-brand">
+        <a href="#">
+          Start Bootstrap
+        </a>
+      </li>
+      <li>
+        <a href="#">Dashboard</a>
+      </li>
+      <li>
+        <a href="#">Shortcuts</a>
+      </li>
+      <li>
+        <a href="#">Overview</a>
+      </li>
+      <li>
+        <a href="#">Events</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Services</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+<!-- End Sidebar -->
+
+
+
+<!-- //////////////////////Start Searchnav////////////////////////////////////// -->
+<nav class="navbar d-flex justify-content-between">
+
+  <div class="container-fluid justify-content-between">
+    <button class="btn text-bg-light" (click)="toggleMenu()" id="menu-toggle">
+    <i class="fa-solid fa-bars"></i>
+    </button>
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <div class="d-flex align-items-center px-3">
+        <div class=" admin d-flex align-items-center">
+          <div class="text-gray-50 font-medium d-none d-md-inline-block">Mira</div>
+          <span class="d-none d-md-block text-gray-400 ml-2 text-sm">Admin</span>
+        </div>
+      </div>
+    </form>
+  </div>
+</nav>
+
+<!-- ///////////////////////End Searchnav/////////////////////// -->
+

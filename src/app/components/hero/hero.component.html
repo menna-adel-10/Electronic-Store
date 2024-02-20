@@ -1,0 +1,7 @@
+<div class="card container-fluid mt-4" style="width: 18rem;">
+  <div *ngFor="let item of data" class="card-body">
+    <i [ngClass]="'fa ' + item.icon"></i>
+    <h5 class="card-title">{{item.num}}</h5>
+    <p class="card-text">{{item.info}}</p>
+  </div>
+</div>
